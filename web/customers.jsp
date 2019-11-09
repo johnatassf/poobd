@@ -22,6 +22,7 @@
                 <th>ID</th>
                 <th>Nome</th>
                 <th>Email</th>
+                <th>Compras</th>
             </tr>
             <%try{%>
             <% for (Customer c : new CustomerDao().listCustomer()) {%>
@@ -29,6 +30,7 @@
                 <th><%=c.getId()%></th>
                 <th><%=c.getNome()%></th>
                 <th><%=c.getEmail()%></th>
+                <th><a href="compras.jsp?id=<%=c.getId()%>">Compras</a></th>
             </tr>
             <%}%>
             <%}catch(Exception ex){%>
