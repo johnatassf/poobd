@@ -25,6 +25,47 @@ public class CustomerDao {
         this.connection = new ConnectionFactory().getConnection();
     }
 
+    
+        public void insert(Customer customer) {
+        String sql = "INSERT INTO CUSTOMER"
+                + "   (CUSTOMER_ID, NAME, EMAIL)"
+                + "   (?,?,?) ";
+        try {
+            PreparedStatement stmt = connection.prepareStatement(sql);
+           
+            stmt.setInt(1, customer.getId());
+            stmt.setString(2, customer.getEmail());
+            stmt.setString(3, customer.getEmail());
+            
+            ResultSet rs = stmt.executeQuery();
+            rs.close();
+            stmt.close();
+
+        } catch (Exception ex) {
+            throw new RuntimeException(ex.getMessage());
+        }
+    }
+        
+    public void update(Customer customer) {
+        String sql = "UPDATE CUSTOMER SET"
+                + "          (NAME = ?, EMAIL =?)"
+                + "    WHERE CUSTOMER_ID = ?";
+        try {
+            PreparedStatement stmt = connection.prepareStatement(sql);
+           
+            stmt.setString(1, customer.getEmail());
+            stmt.setString(2, customer.getEmail());
+            stmt.setInt(3, customer.getId());
+            
+            ResultSet rs = stmt.executeQuery();
+            rs.close();
+            stmt.close();
+
+        } catch (Exception ex) {
+            throw new RuntimeException(ex.getMessage());
+        }
+    }
+    
     public ArrayList<Customer> listCustomer() {
         String sql = "SELECT CUSTOMER_ID ID"
                 + "        , NAME"
@@ -51,4 +92,22 @@ public class CustomerDao {
             throw new RuntimeException(ex.getMessage());
         }
     }
+    public void delete(int idCustomer){
+         String sql = "DELETE CUSTOMER"
+                + "    CUSTOMER_ID = ?";
+        try {
+            PreparedStatement stmt = connection.prepareStatement(sql);
+           
+            stmt.setInt(1, idCustomer);
+          
+            ResultSet rs = stmt.executeQuery();
+            rs.close();
+            stmt.close();
+
+        } catch (Exception ex) {
+            throw new RuntimeException(ex.getMessage());
+        }
+    }
+    
+    
 }
