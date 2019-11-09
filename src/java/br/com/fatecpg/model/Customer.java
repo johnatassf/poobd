@@ -1,9 +1,6 @@
 package br.com.fatecpg.model;
 
-/**
- *
- * @author Rafael Teixeira Miguel
- */
+
 public class Customer {
     private Integer id;
     private String nome;
