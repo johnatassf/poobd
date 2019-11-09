@@ -1,9 +1,3 @@
-<%-- 
-    Document   : customers
-    Created on : 04/11/2019, 21:08:07
-    Author     : Rafael Teixeira Miguel
---%>
-
 <%@page import="br.com.fatecpg.db.Manufacturer"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

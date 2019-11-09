@@ -1,9 +1,3 @@
-<%-- 
-    Document   : index
-    Created on : 04/11/2019, 21:06:30
-    Author     : Rafael Teixeira Miguel
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

@@ -7,10 +7,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-/**
- *
- * @author Rafael Teixeira Miguel
- */
 public class Customer {
     private Integer id;
     private String nome;
