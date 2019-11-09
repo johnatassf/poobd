@@ -1,14 +1,5 @@
 package br.com.fatecpg.model;
 
-import br.com.fatecpg.db.*;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
-
-
 public class Manufacturer {
     private Integer id;
     private String nome;
