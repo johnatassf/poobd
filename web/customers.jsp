@@ -1,10 +1,7 @@
-<%-- 
-    Document   : customers
-    Created on : 04/11/2019, 21:08:07
-    Author     : Rafael Teixeira Miguel
---%>
-
-<%@page import="br.com.fatecpg.db.Customer"%>
+<%@page import="br.com.fatecpg.dao.CustomerDao"%>
+<%@page import="br.com.fatecpg.jdbc.ConnectionFactory"%>
+<%@page import="java.sql.Connection"%>
+<%@page import="br.com.fatecpg.model.Customer"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -14,6 +11,11 @@
     </head>
     <body>
         <%@include file="WEB-INF/jspf/navbar.jspf"%>
+        
+        <h1> Teste Connection </h1>
+        <% Connection con = new ConnectionFactory().getConnection(); %>
+        <h1>Conexão aberta!</h1>
+           <% con.close();%>
         <h1>Clientes</h1>
         <table border="1">
             <tr>
@@ -22,7 +24,7 @@
                 <th>Email</th>
             </tr>
             <%try{%>
-            <% for (Customer c : Customer.getClientes()) {%>
+            <% for (Customer c : new CustomerDao().listCustomer()) {%>
             <tr>
                 <th><%=c.getId()%></th>
                 <th><%=c.getNome()%></th>
