@@ -1,4 +1,5 @@
-<%@page import="br.com.fatecpg.db.Manufacturer"%>
+<%@page import="br.com.fatecpg.dao.ManufacturerDao"%>
+<%@page import="br.com.fatecpg.model.Manufacturer"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -16,7 +17,7 @@
                 <th>Email</th>
             </tr>
             <%try{%>
-            <% for (Manufacturer m : Manufacturer.getFabricante()) {%>
+            <% for (Manufacturer m : new ManufacturerDao().listCustomer()) {%>
             <tr>
                 <th><%=m.getId()%></th>
                 <th><%=m.getNome()%></th>
