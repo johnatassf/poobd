@@ -28,15 +28,17 @@ public class NotaCompraDao {
     }
 
     public ArrayList<NotaCompra> listCustomer(int pIdCustomer) {
-        String sql = "select ORDER_NUM       ORDERNUMERO " +
-                     "     , CUSTOMER_ID     IDCUSTOMER" +
-                     "     , PRODUCT_ID      IDPRODUCT" +
-                     "     , QUANTITY        QUANTIDADE" +
-                     "     , SHIPPING_COST   VALORFRETE" +
-                     "     , SALES_DATE      DATACOMPRA" +
-                     "     , SHIPPING_DATE   DATAENVIO" +
-                     "     , FREIGHT_COMPANY EMPRESAFRETE" +
-                     "  FROM purchase_order " +
+        String sql = "SELECT PO.ORDER_NUM       ORDERNUMERO " +
+                     "     , PO.CUSTOMER_ID     IDCUSTOMER" +
+                     "     , PO.PRODUCT_ID      IDPRODUCT" +
+                     "     , PO.QUANTITY        QUANTIDADE" +
+                     "     , PO.SHIPPING_COST   VALORFRETE" +
+                     "     , PO.SALES_DATE      DATACOMPRA" +
+                     "     , PO.SHIPPING_DATE   DATAENVIO" +
+                     "     , PO.FREIGHT_COMPANY EMPRESAFRETE" +
+                     "     , PD.DESCRIPTION     DESCRICAO"+
+                     "  FROM purchase_order po"+
+                " INNER JOIN PRODUCT pd on (PO.PRODUCT_ID = PD.PRODUCT_ID)" +
                      " WHERE CUSTOMER_ID = ?";
         try {
 
@@ -56,6 +58,7 @@ public class NotaCompraDao {
                 Date compra = rs.getDate("DATACOMPRA");
                 Date dataFrete = rs.getDate("DATAENVIO");
                 String empresaFrete = rs.getString("EMPRESAFRETE");
+                String descricao = rs.getString("DESCRICAO");
 
                 NotaCompra notaCompra = new NotaCompra(
                         orderNumero,
@@ -65,7 +68,8 @@ public class NotaCompraDao {
                         valorFrete,
                         compra,
                         dataFrete,
-                        empresaFrete);
+                        empresaFrete,
+                        descricao);
                 
                 notasCompras.add(notaCompra);
             }

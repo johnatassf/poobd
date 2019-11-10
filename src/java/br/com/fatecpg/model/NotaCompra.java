@@ -18,21 +18,21 @@ public class NotaCompra {
     private int quantidade;
     private double valorFrete;
     private Date compra;
-    private Date DataFrete;
-    private String EmpresaFrete;
+    private Date dataFrete;
+    private String empresaFrete;
+    private String descricaoProduto;
 
-    public NotaCompra(int orderNumero, int idCustomer, int idProduct, int quantidade, double valorFrete, Date compra, Date DataFrete, String EmpresaFrete) {
+    public NotaCompra(int orderNumero, int idCustomer, int idProduct, int quantidade, double valorFrete, Date compra, Date dataFrete, String empresaFrete, String descricaoProduto) {
         this.orderNumero = orderNumero;
         this.idCustomer = idCustomer;
         this.idProduct = idProduct;
         this.quantidade = quantidade;
         this.valorFrete = valorFrete;
         this.compra = compra;
-        this.DataFrete = DataFrete;
-        this.EmpresaFrete = EmpresaFrete;
+        this.dataFrete = dataFrete;
+        this.empresaFrete = empresaFrete;
+        this.descricaoProduto = descricaoProduto;
     }
-    
-    
 
     public int getOrderNumero() {
         return orderNumero;
@@ -59,10 +59,16 @@ public class NotaCompra {
     }
 
     public Date getDataFrete() {
-        return DataFrete;
+        return dataFrete;
     }
 
     public String getEmpresaFrete() {
-        return EmpresaFrete;
+        return empresaFrete;
     }
+
+    public String getDescricaoProduto() {
+        return descricaoProduto;
+    }
+
+    
 }

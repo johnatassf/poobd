@@ -24,11 +24,6 @@
         <li class="nav-item active">
           <a class="nav-link" href="index.jsp">Inicio <span class="sr-only">(atual)</span></a>
         </li>
-        &nbsp;
-        <li class="nav-item">
-          <a class="nav-link" href="compras.jsp">Compras</a>
-        </li>
-        &nbsp;
         <li class="nav-item">
           <a class="nav-link" href="customers.jsp">Clientes</a>
         </li>

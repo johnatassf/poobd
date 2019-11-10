@@ -82,14 +82,13 @@
     <div class="jumbotron caixal1">
     <h1 class="display-4" style='color:#DB3256'>Johnatas Santos</h1>
     <br>
-     <p>Responsável pela criação da página ????????</p>
+     <p>Responsável pelo Backend e página de compras</p>
      <br>
     <p class="lead">
-    
-      <a class="btn-primary btn-lg" href="????.jsp" role="button" style="background-color:#DB3256 ">???</a>
+      <a class="btn-primary btn-lg" href="customers.jsp" role="button" style="background-color:#DB3256">Clientes</a>
     </p>
     <div class="imagem"> 
-     <img src="COLOCARFOTOAQUI!!!!!.jpeg" style="height: 200px; width: 200px" >
+    <img src="johnatas.png" style="height: 200px; width: 200px" >
   </div>
     </div>
     </section>

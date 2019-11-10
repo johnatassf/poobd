@@ -36,9 +36,7 @@
       <br>
 </header>
    <div align="center">
-       <%-- <% Connection con = new ConnectionFactory().getConnection(); %>
-        <h1>Conexão aberta!</h1>
-           <% con.close();%>
+       
         <h1>Clientes</h1>
         <table border="1">
             <tr>
@@ -58,7 +56,7 @@
             <%}%>
             <%}catch(Exception ex){%>
             <%=ex.getMessage()%>
-            <%}%> --%>
+            <%}%> 
         </table>
         </div>
     </body>
