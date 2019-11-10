@@ -18,6 +18,7 @@
        </style>
     
         <body>
+        <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
         <%@include file="WEB-INF/jspf/navbar.jspf" %>
         <header>
         
@@ -95,3 +96,6 @@
     </section>
      </div> 
     </div>
+
+    </body>
+</html>
