@@ -14,6 +14,5 @@
              font-family: 'Roboto';
        }
        </style>
-       <p style="color: white; font-size: 0px; text-align: center"> .</p>
-      
-            <p style="color: #DB7093 ; font-size: 11px; text-align: center"> Programação Orientada a Objetos - Trabalho 02 - Grupo 08 &nbsp</p>
+       <br>
+       <p style="color: #DB7093 ; font-size: 11px; text-align: center"> Programação Orientada a Objetos - Trabalho 02 - Grupo 08 &nbsp</p>

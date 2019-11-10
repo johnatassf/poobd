@@ -22,8 +22,7 @@
         <%@include file="WEB-INF/jspf/navbar.jspf" %>
         <header>
         
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        
     </head>
       <br>
    <div class="jumbotron apresentacao" style="background-color:#DB3256 ">
