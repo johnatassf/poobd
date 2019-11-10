@@ -26,6 +26,10 @@
         </li>
         &nbsp;
         <li class="nav-item">
+          <a class="nav-link" href="compras.jsp">Produtos</a>
+        </li>
+        &nbsp;
+        <li class="nav-item">
           <a class="nav-link" href="customers.jsp">Clientes</a>
         </li>
         &nbsp;
