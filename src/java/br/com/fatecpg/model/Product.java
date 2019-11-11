@@ -15,7 +15,36 @@ public class Product {
    private String codigo;
    private double valor;
    private int quantidade;
+   private double marcacao;
+   private String disponibilidade;
    private String descricao;
+
+    public Product(int id, int idFabrica, String codigo, double valor, int quantidade, double marcacao, String disponibilidade, String descricao) {
+        this.id = id;
+        this.idFabrica = idFabrica;
+        this.codigo = codigo;
+        this.valor = valor;
+        this.quantidade = quantidade;
+        this.marcacao = marcacao;
+        this.disponibilidade = disponibilidade;
+        this.descricao = descricao;
+    }
+
+    public double getMarcacao() {
+        return marcacao;
+    }
+
+    public void setMarcacao(double marcacao) {
+        this.marcacao = marcacao;
+    }
+
+    public String getDisponibilidade() {
+        return disponibilidade;
+    }
+
+    public void setDisponibilidade(String disponibilidade) {
+        this.disponibilidade = disponibilidade;
+    }
 
     
    public int getId() {
