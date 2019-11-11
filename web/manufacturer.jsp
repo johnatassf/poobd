@@ -39,6 +39,7 @@
                 <th>ID</th>
                 <th>Nome</th>
                 <th>Email</th>
+                <th>Produto</th>
             </tr>
             <%try{%>
             <% for (Manufacturer m : new ManufacturerDao().listCustomer()) {%>
@@ -46,11 +47,13 @@
                 <th><%=m.getId()%></th>
                 <th><%=m.getNome()%></th>
                 <th><%=m.getEmail()%></th>
+                  <th><a href="produtos.jsp?idFabrica=<%=m.getId()%>">Produto</a></th>
             </tr>
             <%}%>
             <%}catch(Exception ex){%>
             <%=ex.getMessage()%>
             <%}%>
+            
         </table>
         </div>
     </body>
