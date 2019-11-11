@@ -65,11 +65,14 @@ public class ManufacturerDao {
         }
     }
 
-    public ArrayList<Manufacturer> listCustomer() {
-        String sql = "SELECT MANUFACTURER_ID ID"
-                + "        , NAME"
-                + "        , EMAIL "
-                + "     FROM MANUFACTURER ";
+    public ArrayList<Manufacturer> listarFabricas() {
+        String sql = "SELECT " +
+ " MANUFACTURER_ID," +
+ " NAME," +
+ " CITY," +
+ " STATE," +
+ " EMAIL" +
+ " FROM MANUFACTURER";
         try {
 
             PreparedStatement stmt = connection.prepareStatement(sql);
@@ -78,9 +81,11 @@ public class ManufacturerDao {
 
             while (rs.next()) {
                 Manufacturer manufacturer = new Manufacturer(
-                        rs.getInt("ID"),
+                        rs.getInt("MANUFACTURER_ID"),
                         rs.getString("NAME"),
-                        rs.getString("EMAIL"));
+                        rs.getString("EMAIL"),
+                        rs.getString("CITY"),
+                        rs.getString("STATE"));
 
                 manufacturers.add(manufacturer);
             }
