@@ -37,7 +37,7 @@
 </header>
    <div align="center">
        
-        <h1>Clientes</h1>
+        <h1><img src="value.png" style="width: 50px; height: 50px"></h1>
         <table border="1">
             <tr>
                 <th>ID</th>

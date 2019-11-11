@@ -43,6 +43,7 @@
         <% if (!request.getParameter("id").isEmpty()) {%>
         <% int id = Integer.parseInt(request.getParameter("id"));%>
         <table border="1">
+            <h1><img src="logistic.png" style="width: 50px; height: 50px"></h1>
             <tr>
                 <th>Id Cliente</th>
                 <th>Produto Id</th>

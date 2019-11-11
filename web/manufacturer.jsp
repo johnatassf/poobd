@@ -7,7 +7,7 @@
     <head>
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Clientes - JavaDB</title>
+        <title>Fabricantes - JavaDB</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         
@@ -35,6 +35,8 @@
       <br>
 </header>
    <div align="center">
+       
+       <h1><img src="worker.png" style="width: 50px; height: 50px"></h1>
         <table border="1">
             <tr>
                 <th>ID</th>

@@ -57,7 +57,7 @@
       <a class="btn-primary btn-lg" href="customers.jsp" role="button" style="background-color:#DB3256">Fabricantes</a>
     </p>
     <div class="imagem">
-     <img src="COLOCARFOTOAQUI!!!!!!.jpeg" style="height: 200px; width: 200px" >
+     <img src="alan.jpeg" style="height: 200px; width: 200px" >
   </div>
   </div>
 </section>
@@ -73,7 +73,7 @@
       <a class="btn-primary btn-lg" href="customers.jsp" role="button" style="background-color:#DB3256">Clientes</a>
     </p>
     <div class="imagem">
-     <img src="COLOCARFOTOAQUI!!!!!.jpeg" style="height: 200px; width: 200px" >
+     <img src="debora.jpeg" style="height: 200px; width: 200px" >
   </div>
   </div>
 </section>

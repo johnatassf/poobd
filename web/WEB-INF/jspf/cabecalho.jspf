@@ -1,8 +1,4 @@
-<%-- 
-    Document   : cabecalho
-    Created on : 01/09/2019, 11:25:24
-    Author     : Mordor
---%>
+
 <%@ page pageEncoding="UTF-8" %>
 <html>
         <head>      
@@ -15,4 +11,4 @@
        }
        </style>
        <br>
-       <p style="color: #DB7093 ; font-size: 11px; text-align: center"> Programação Orientada a Objetos - Trabalho 02 - Grupo 08 &nbsp</p>
+       <p style="color: #DB7093 ; font-size: 11px; text-align: center"> Programação Orientada a Objetos - Trabalho 05 - Grupo 09 &nbsp</p>

@@ -45,6 +45,7 @@
         <% if (!request.getParameter("idFabrica").isEmpty()) {%>
         <% int idFabrica = Integer.parseInt(request.getParameter("idFabrica"));%>
         <table border="1">
+             <h1><img src="gift.png" style="width: 50px; height: 50px"></h1>
             <tr>
                
                 <th>Produto Id</th>
