@@ -51,7 +51,7 @@
     <div class="jumbotron caixal1">
     <h1 class="display-4" style='color:#DB3256'>Alan Monteiro</h1>
     <br>
-    <p>Responsável pela criação da página de fabricantes</p>
+    <p>Responsável pela listagem de produtos</p>
     <br>
     <p class="lead">
       <a class="btn-primary btn-lg" href="customers.jsp" role="button" style="background-color:#DB3256">Fabricantes</a>
@@ -66,7 +66,7 @@
   <div class="jumbotron caixal1">
     <h1 class="display-4" style='color:#DB3256'>Debora </h1>
     <br>
-    <p>Responsável pela criação da pagina de Clientes</p>
+    <p>Responsável pela criação da listagem de fabricantes</p>
     <br>
     <p class="lead">
 
