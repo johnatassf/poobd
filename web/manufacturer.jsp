@@ -1,3 +1,4 @@
+<%@page import="java.util.ArrayList"%>
 <%@page import="br.com.fatecpg.dao.ManufacturerDao"%>
 <%@page import="br.com.fatecpg.model.Manufacturer"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -25,10 +26,10 @@
         <%@include file="WEB-INF/jspf/navbar.jspf" %>
         <header>
        
-    </head>
+    
       <br>
    <div class="jumbotron apresentacao" style="background-color:#DB3256 ">
-    <h1 class="display-4" style='color: white'> <center>Clientes</center></h1>
+    <h1 class="display-4" style='color: white'> <center>Fabricantes</center></h1>
     
    </div>
       <br>
@@ -39,13 +40,19 @@
                 <th>ID</th>
                 <th>Nome</th>
                 <th>Email</th>
+                <th>City</th>
+                <th>State</th>
             </tr>
             <%try{%>
-            <% for (Manufacturer m : new ManufacturerDao().listCustomer()) {%>
+            <%ArrayList<Manufacturer>fabricas=new ManufacturerDao().listarFabricas(); %>
+            <% for (Manufacturer fabrica : fabricas) {%>
             <tr>
-                <th><%=m.getId()%></th>
-                <th><%=m.getNome()%></th>
-                <th><%=m.getEmail()%></th>
+                <th><%=fabrica.getId()%></th>
+                <th><%=fabrica.getNome()%></th>
+                <th><%=fabrica.getEmail()%></th>
+                <th><%=fabrica.getCity()%></th>
+                <th><%=fabrica.getState()%></th>
+                
             </tr>
             <%}%>
             <%}catch(Exception ex){%>
